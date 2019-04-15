@@ -1,0 +1,46 @@
+.box {
+  background: #9b59b6;
+  height: 100px;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  color: white;
+  font-size: 17px;
+  border-radius: 20px;
+}
+
+/*
+Much easier to use the short-hand...
+transition: property duration timing-function delay
+*/
+.animated {
+  transition: transform 2s ease-in 2s, background-color 5s ease-out 10s;
+}
+
+/*
+And here's the long form...
+*/
+/* .animated {
+  transition-property: transform;
+  transition-duration: 5s;
+  transition-timing-function: ease-in;
+  transition-delay: 2s;
+} */
+
+.box:hover {
+  transform: translateX(300px);
+  background-color: teal;
+}
+
+/* .animated {
+  transition-property: background, border-radius,;
+  transition-duration: 1s, 1s;
+  transition-delay: 5s, 2s;
+}
+
+.box:hover {
+  background: #e74c3c;
+  transform-origin: bottom left;
+  transform: scale(2) rotate(45deg);
+  border-radius: 50px;
+} */
